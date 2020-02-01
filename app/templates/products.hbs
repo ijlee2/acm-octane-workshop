@@ -4,9 +4,14 @@
     <ul local-class="list">
         {{#each @model as |product|}}
             <li local-class="item">
-                <ProductCard
-                    @product={{product}}
-                />
+                <LinkTo
+                    @route="products.product"
+                    @model={{product.id}}
+                >
+                    <ProductCard
+                        @product={{product}}
+                    />
+                </LinkTo>
             </li>
         {{/each}}
     </ul>
