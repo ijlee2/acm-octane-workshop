@@ -1,1 +1,7 @@
-{{outlet}}
+<div local-class="details">
+    <h2>{{@model.name}}</h2>
+
+    <ProductDetails
+        @product={{@model}}
+    />
+</div>

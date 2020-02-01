@@ -1,0 +1,36 @@
+<img
+    alt=""
+    local-class="image"
+    role="presentation"
+    src={{@product.imageUrl}}
+>
+
+<div local-class="field">
+    <div local-class="label">Description</div>
+    <p>{{@product.description}}</p>
+</div>
+
+<div local-class="field">
+    <div local-class="label">Price</div>
+    <p>${{@product.price}}</p>
+</div>
+
+<div local-class="field">
+    <div local-class="label">Rating</div>
+    <p>{{@product.rating}} out of 5 stars</p>
+</div>
+
+<div local-class="field">
+    <div local-class="label">Sold by</div>
+    <p>{{@product.seller}}</p>
+</div>
+
+<div local-class="actions">
+    <button
+        local-class="button"
+        type="button"
+        {{on "click" this.addProductToCart}}
+    >
+        Add to Cart
+    </button>
+</div>
