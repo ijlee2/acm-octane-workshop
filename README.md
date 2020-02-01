@@ -2,6 +2,8 @@
 
 The workshop was first presented at the Austin Code Mentorship on 2/1/2020.
 
+![The finished app shows a product listing](screenshot.png)
+
 
 ## Description
 
