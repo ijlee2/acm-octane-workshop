@@ -1,3 +1,23 @@
-<h1>Hello world!</h1>
+<div>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <LinkTo @route="index">Home</LinkTo>
+                </li>
 
-{{outlet}}
+                <li>
+                    <LinkTo @route="products">Products</LinkTo>
+                </li>
+
+                <li>
+                    <LinkTo @route="checkout">Cart</LinkTo>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{outlet}}
+    </main>
+</div>
