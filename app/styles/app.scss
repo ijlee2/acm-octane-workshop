@@ -1,0 +1,22 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 0.5px;
+    margin: 0;
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+}
