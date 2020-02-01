@@ -1,20 +1,30 @@
 <h1>Products</h1>
 
 <div local-class="container">
-    <ul local-class="list">
-        {{#each @model as |product|}}
-            <li local-class="item">
-                <LinkTo
-                    @route="products.product"
-                    @model={{product.id}}
-                >
-                    <ProductCard
-                        @product={{product}}
-                    />
-                </LinkTo>
-            </li>
-        {{/each}}
-    </ul>
+    <div local-class="filter-menu">
+        <div local-class="placeholder">Filter by Price</div>
 
-    {{outlet}}
+        <div local-class="placeholder">Filter by Rating</div>
+
+        <div local-class="placeholder">Sort by</div>
+    </div>
+
+    <div local-class="search-results">
+        <ul local-class="list">
+            {{#each @model as |product|}}
+                <li local-class="item">
+                    <LinkTo
+                        @route="products.product"
+                        @model={{product.id}}
+                    >
+                        <ProductCard
+                            @product={{product}}
+                        />
+                    </LinkTo>
+                </li>
+            {{/each}}
+        </ul>
+
+        {{outlet}}
+    </div>
 </div>

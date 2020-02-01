@@ -5,7 +5,7 @@
     height: 100vh;
 
     .navigation {
-        background-color: lightgray;
+        background-color: rgba(31, 31, 31, 0.1);
         padding: 16px;
 
         .list {
@@ -16,6 +16,11 @@
 
             .item {
                 margin-right: 32px;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
             }
         }
     }
