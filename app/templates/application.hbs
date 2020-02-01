@@ -1,23 +1,23 @@
-<div>
+<div local-class="container">
     <header>
-        <nav>
-            <ul>
-                <li>
+        <nav local-class="navigation">
+            <ul local-class="list">
+                <li local-class="item">
                     <LinkTo @route="index">Home</LinkTo>
                 </li>
 
-                <li>
+                <li local-class="item">
                     <LinkTo @route="products">Products</LinkTo>
                 </li>
 
-                <li>
+                <li local-class="item">
                     <LinkTo @route="checkout">Cart</LinkTo>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main local-class="main">
         {{outlet}}
     </main>
 </div>

@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+
+    .list {
+        list-style: none;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+            margin-right: 16px;
+            margin-bottom: 16px;
+        }
+    }
+}

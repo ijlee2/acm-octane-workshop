@@ -1,9 +1,14 @@
-<div style={{if this.isAmazing "border: 4px solid gold;"}}>
+<div local-class="container {{if this.isAmazing "is-amazing"}}">
     <img
         alt=""
+        local-class="image"
         role="presentation"
         src={{@product.imageUrl}}
     >
-    <div>{{@product.name}}</div>
-    <div>${{@product.price}}</div>
+    <div local-class="name">
+        {{@product.name}}
+    </div>
+    <div local-class="price">
+        ${{@product.price}}
+    </div>
 </div>

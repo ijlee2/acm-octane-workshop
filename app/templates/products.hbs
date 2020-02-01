@@ -1,13 +1,15 @@
 <h1>Products</h1>
 
-<ul>
-    {{#each @model as |product|}}
-        <li>
-            <ProductCard
-                @product={{product}}
-            />
-        </li>
-    {{/each}}
-</ul>
+<div local-class="container">
+    <ul local-class="list">
+        {{#each @model as |product|}}
+            <li local-class="item">
+                <ProductCard
+                    @product={{product}}
+                />
+            </li>
+        {{/each}}
+    </ul>
 
-{{outlet}}
+    {{outlet}}
+</div>
