@@ -2,11 +2,24 @@
 
 <div local-class="container">
     <div local-class="filter-menu">
-        <div local-class="placeholder">Filter by Name</div>
+        <div local-class="filter-input-container">
+            <InputComponent
+                @ariaLabel="Filter by Name"
+                @placeholder="Filter by name. Cake, coffee, etc."
+            />
+        </div>
 
-        <div local-class="placeholder">Filter by Rating</div>
+        <div local-class="filter-input-container">
+            <div local-class="input-placeholder">
+                Filter by rating
+            </div>
+        </div>
 
-        <div local-class="placeholder">Sort by</div>
+        <div local-class="filter-input-container">
+            <div local-class="input-placeholder">
+                Sort by
+            </div>
+        </div>
     </div>
 
     <div local-class="search-results">
