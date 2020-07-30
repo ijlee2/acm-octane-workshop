@@ -5,22 +5,24 @@
     padding: 0 16px;
 
     .filter-menu {
+        align-items: center;
         display: flex;
         margin-top: 8px;
         margin-bottom: 32px;
 
-        .placeholder {
+        .filter-input-container {
             flex: 1;
-
             margin-right: 32px;
-            border: 2px solid rgba(31, 31, 31, 0.1);
-            padding: 8px 16px;
-
-            background-color: rgba(239, 239, 239, 0.4);
-            color: rgba(31, 31, 31, 0.4);
 
             &:last-of-type {
                 margin-right: 0;
+            }
+
+            .input-placeholder {
+                background-color: rgba(239, 239, 239, 0.4);
+                border: 2px dashed rgba(31, 31, 31, 0.1);
+                color: rgba(31, 31, 31, 0.4);
+                padding: 8px 16px;
             }
         }
     }
